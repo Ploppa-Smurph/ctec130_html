@@ -17,7 +17,8 @@
     <!-- This metadata provides information about responsive web design. This defines the 'viewport' and states that the browser should use the entire viewable device width. -->    
               <meta name="viewport" content="width=device-width">
 
-
+    <!-- Link tag allows you to specify the path of an external style (CSS) file. The link tag is also used to set the 'favicon' for the website. -->
+              <link rel="stylesheet" type="text/css" href="style.css"/>       
             
     <!-- Title tag: the 'title' will display in the tab section of the browser, or across the top of the browser in non-tabbed browsing. -->
               <title>Jeff Walley's Week 03 Webpage with External CSS Stylesheet</title>
@@ -34,36 +35,36 @@
               <h1>Jeff Walley's Week 03 Webpage with External CSS Stylesheet</h1>
         
     <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
-              <p>This week we link an external CSS (Cascading Style Sheet)
+              <p>This week we link an external CSS (Cascading Style Sheet) =>
         
-    <!-- <i> tag: make the text italic. -->
-              <i>"https://www.github.com/Ploppa-Smurph/ctec130_html/blob/main/README.md"</i>
+    <!-- <i> tag: make text between <i> tag italic. -->
+              &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
         
     <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
               <br>
               <br>
-              The "https://" section above delineates that we are using a more secure version of the http protocol to communicate with the web server. 
+              The 'link' tag allows us to specify an external path that hold our CSS file. 
               <br>
-              HTTPS communicates over port 443, as opposed to the more common and less secure port 80 of http. HTTPS makes use of SSL/TLS certificates to encrypt data in transit.
-              <br>
-              <br>
-              'www.github.com' is the domain name of the website.
+              By keeping the CSS file in an external location we can have a cleaner HTML structure. Having an external file also helps with templating and reusability of our webcode.
               <br>
               <br>
-              While, '/Ploppa-Smurph/ctec130_html/blob/main/' is the path of the URL.
+              The 'rel', or relation, attribute is equal to "stylesheet". This tells the browser that we are using a stylesheet in the link. 
               <br>
               <br>
-              README.md is a file. The README file is written in the plain-text 'markdown' file format and displays information associated with my ctec-130 course notes. 
+              Next we have the 'type' attribute, which tells the browser that the stylesheet is in "text/css" format.
+              <br>
+              <br>
+              Finally we have the 'href' attribute. The href is where you enter the URL of a page you want to use as link. In the case of a styleshee it is often a local path to the CSS file.
     
     <!-- </p> end tag: close a <p> paragraph section of the HTML file. -->
               </p>
     
     <!-- An 'h2 tag' is considered a sub-heading of 'h1' and each smaller size is a further subheading. -->
               <h2>This is a 'h2 tag'</h2>
-              <p>'h2 tags are used as a subheading under the main title. In this section we will use a 'Document Fragment' to jump to a section of the webpage.
+              <p>'h2 tags are used as a subheading under the main title.
               <br>
               <br>
-              <a href="footer">Jump back to the 'h1' heading</a>      
+              <a href="#footer">Jump to the 'footer' of this page</a>      
               </p>
     
     
@@ -74,7 +75,7 @@
     <!-- the 'footer' tag deliniates an area at the bottom of the HTML body -->
          <footer>
           <p>Copyright &copy; 2024 Jeffrey Walley | Walley Web Works</p>
-          
+
     <!-- Footer tag end, denoted by the slash '/' -->
          </footer>    
     <!-- Body tag end, denoted by the slash '/'. -->
