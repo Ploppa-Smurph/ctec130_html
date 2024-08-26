@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Walley's wk02 Project</title>
+</head>
+<body>
+    <div class="wk02Container">
+        <!-- Week 02 Project -->
+        <!-- Nav tag is an HTML element used to contain a group of navigation links. -->
+        <nav id="nav">
+            <a href="#top">HOME</a> |
+            <a href="#emphasis">EMPHASIS</a> |
+            <a href="#list">LIST</a> |
+            <a href="#image">IMAGE</a>
+            <a href="#comparison">COMPARISON</a>
+        </nav>
+
+        <!-- <h1> tag: this is the largest of the 'heading' tags, which are different from the 'head' metadata tag. -->
+        <!-- There are 6 different predefined HTML headings, <h1> to <h6>, <h1> is largest and the headings get progressively smaller until <h6>. -->
+        <h1 id="heading">Jeff Walley's Week 02 Webpage with Links, Images, and Emphasis.</h1>
+
+        <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
+        <p>This week we set the structure of a web page up, with some navigation links, use of text
+
+            <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
+            <br>
+
+            <!-- </p> end tag: close a <p> paragraph section of the HTML file. -->
+        </p>
+
+        <!-- An 'h2 tag' is considered a sub-heading of 'h1' and each smaller size is a further subheading. -->
+        <h2 id="emphasis">The Following is an Emphatic Statement</h2>
+        <p>
+
+            <!-- Strong tag is used to provide bold text and provide more context for accessible browser support -->
+            <!-- 'em' or emphasis tag is used to italicize the content contained between the <em></em> tags -->
+            <strong>Very Important!</strong> Put the right em<em>pha</em>sis on the correct syll<strong>ab</strong>le.
+            <br>
+            <br>
+
+            <!-- Ampersand denotes a 'character entity' in HTML. The &lt; creates a < symbol; &gt; creates a > symbol, in HTML. -->
+            We can make text bold using the &lt;b&gt; & &lt;/b&gt; tags.
+            <br>
+            Italics can be accomplished with the &lt;i&gt; & &lt;/i&gt;
+        </p>
+
+        <h3>These are a few of my Favorite candles</h3>
+        <!-- Ordered List = <ol></ol> tag. In this example I reversed the list so that it would display from 5 to 1. -->
+        <!-- List items are denoted with the <li></li> tags in HTML. -->
+        <ol reversed id="list"
+            title="These are NOT really my favorite candles, they are simply weird names from the New York Times 'Top Candle Scent' list.">
+            <li>Paddywax Tobacco Flower Form Candle</li>
+            <li>Mala the Brand Cereal Scented Soy Candle</li>
+            <li>Flamingo Estate Roma Heirloom Tomato</li>
+            <li>Boy Smells Hinoki Fantôme Candle</li>
+            <li>D.S. & Durga Pasta Water Candle</li>
+        </ol>
+
+        <!-- <h4> is another heading tag, this is smaller than <h3>, but larger than h5. -->
+        <h4 id="image">My Favorite Animals Are</h4>
+        <img src="./assets/img/trelvyn.jpg" alt="Trelvyn the Cat" width="500">
+        <img src="./assets/img/enki.jpg" alt="Enki the Cat" width="500">
+        <img src="./assets/img/rory.jpg" alt="Rory the Cat" width="500">
+
+        <!-- <h5> is the second smallest of the heading choices. -->
+        <h5 id="comparison">In this Area We Make a Comparison</h5>
+
+        <!-- Ampersand denotes a 'character entity' in HTML. The &lt; creates a < symbol; &gt; creates a > symbol, in HTML. -->
+        <p>This is &lt; than that, but that & this is &gt; than those. </p>
+
+        <!-- <h6> is a the smallest of the predefined heading choices. -->
+        <h6 id="heading6">Smallest 'h6 tag' Heading Right Here </h6>
+
+    </div>
+</body>
+</html>
