@@ -64,6 +64,7 @@ table {
 /* Body style */
 body {
     background-image: url("../img/crumpled.png");
+    height: auto;
 }
 
 /* Navbar style */
@@ -71,12 +72,24 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0; 
+    width: 100%;
 }
 
 .navbar {
-    padding: 1vh;
-    width: 100%;
+    padding: 2vh;
     background-color: var(--color01);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.navlinks a {
+    
+}
+
+.navlinks a.grow {
+    transition: all 0.2s ease-in-out; 
 }
 
 .navlinks a:link, a:visited {
@@ -84,16 +97,32 @@ body {
     color: var(--color07);
     cursor: pointer;
     border-radius: 50%;
-    padding: .5%; 
+    font-size: small;
+    padding: .5%;
+    margin: 1px 2px; 
     text-align: center;
-    text-decoration: none;
-    display:inline-block;
+    text-decoration: none; 
+    display:inline;
+    
+}
+
+.navlinks a:hover {
+    transform: scale(1.1);
 }
 
 /* Project container style */
 .project-container {
-    padding: 10%;  
-    height: 500vh;  
+    margin: 10%; 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 5%), var(--color07 100%));  
+    background-size: 100% 100%;
+    height: auto;
+}
+
+/* Week 03 project special style */
+.wk03Container {
+    background-color: var(--color08);
+    padding: 2%;
+    text-align: center;
 }
 
 .project-container li {
