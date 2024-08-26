@@ -50,30 +50,65 @@ table {
 /* :root to set custom css variables for use in the code later */
 /* I always establish a color scheme and grab at least 5, and up to 9 color RGB codes for use as variables for quick use */
 :root {
-    --color01Dk: rgba(3, 4, 94);
-    --color01Md: rgba(0, 119, 182);
-    --color01Lt: rgba(0, 180, 216);
-    --color02Dk: rgba(255, 84, 0);
-    --color02Md: rgba(255, 133, 0);
-    --color02Lt: rgba(255,133,0);
-    --color03Dk: rgba(50,50,50);
-    --color03Md: rgba(100,100,100);
-    --color03Lt: rgba(225,225,225);
+    --color01: rgba(67, 127, 151);
+    --color02: rgba(58, 88, 103);
+    --color03: rgba(48, 48, 54);
+    --color04: rgba(90, 98, 45);
+    --color05: rgba(132, 147, 36);
+    --color06: rgba(194, 163, 26);
+    --color07: rgba(255, 179, 15);
+    --color08: rgba(246, 141, 12);
+    --color09: rgba(236, 102, 8);
 }
-* {
-    background-color: rgb(32, 10, 228);
-    color: whitesmoke;
+
+/* Body style */
+body {
+    background-image: url("../img/crumpled.png");
+}
+
+/* Navbar style */
+.navbar-container {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; 
 }
 
 .navbar {
+    padding: 1vh;
     width: 100%;
-    height: 5vh;
-    color: var(--color01Dk);
-    background-color: var(--color02Md);
+    background-color: var(--color01);
 }
 
-.navlinks a:link {
-    
+.navlinks a:link, a:visited {
+    background-color: var(--color03);
+    color: var(--color07);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: .5%; 
+    text-align: center;
     text-decoration: none;
+    display:inline-block;
+}
 
+/* Project container style */
+.project-container {
+    padding: 10%;  
+    height: 500vh;  
+}
+
+.project-container li {
+    background-color: var(--color02);
+    color: var(--color07);
+    width: 52%;
+}
+
+/* Footer Style */
+footer {
+    background-color: var(--color04);
+    color: var(--color07);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
