@@ -129,6 +129,56 @@ body {
     border-radius: 5%;    
 }
 
+.wk03Container h1 {
+    font-size: 45px;
+}
+
+/* CSS Combinator selectors */
+.wk03Container > p {
+    color: var(--color09);
+    height: auto;
+}
+
+.wk03float-container {
+    background-color: var(--color02);
+    margin-top: 2%;
+    display: flex;
+    flex-basis: auto;
+    padding: 5%;
+}
+
+.imgFloat-left {
+    float: left;
+    clear: both;
+}
+
+.imgFloat-right {
+    float: right;
+    clear: both;
+}
+
+.cssBox-container {
+    margin: 20px; 
+}
+
+.cssBox-content {
+    background-color: var(--color06);
+    background-clip: content-box;
+    width: 60%;
+    height: 40vh;
+    align-content: center;
+    margin: auto;  
+    padding: 20px; 
+    border: 15px dashed var(--color08);
+    outline: 20px solid var(--color03);
+}
+
+& p {
+    padding: 2%;
+    text-align: start;
+    color: var(--color02);
+}
+
 .project-container {
     background-color: var(--color05);
     padding-left: 25%;
@@ -150,7 +200,7 @@ body {
 footer {
     background-color: var(--color04);
     color: var(--color07);
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
