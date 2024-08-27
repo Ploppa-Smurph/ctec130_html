@@ -50,15 +50,15 @@ table {
 /* :root to set custom css variables for use in the code later */
 /* I always establish a color scheme and grab at least 5, and up to 9 color RGB codes for use as variables for quick use */
 :root {
-    --color01: rgba(67, 127, 151);
+    --color01: rgba(48, 48, 54);
     --color02: rgba(58, 88, 103);
-    --color03: rgba(48, 48, 54);
-    --color04: rgba(90, 98, 45);
-    --color05: rgba(132, 147, 36);
-    --color06: rgba(194, 163, 26);
-    --color07: rgba(255, 179, 15);
-    --color08: rgba(246, 141, 12);
-    --color09: rgba(236, 102, 8);
+    --color03: rgb(75, 193, 240);
+    --color04: rgb(158, 70, 154);
+    --color05: rgb(121, 219, 55);
+    --color06: rgb(41, 136, 3);
+    --color07: rgb(240, 224, 1);    
+    --color08: rgb(196, 4, 30);
+    --color09: rgb(129, 7, 7);
 }
 
 /* Body style */
@@ -72,29 +72,26 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0; 
-    width: 100%;
+    width: auto;
 }
 
 .navbar {
     padding: 2vh;
-    background-color: var(--color01);
+    background-color: var(--color09);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
 }
 
-.navlinks a {
+.navlinks {
+    justify-self: center;
+}
     
-}
-
-.navlinks a.grow {
+.navlinks.grow {
     transition: all 0.2s ease-in-out; 
 }
 
 .navlinks a:link, a:visited {
-    background-color: var(--color03);
-    color: var(--color07);
+    background-color: var(--color06);
+    color: var(--color01);
     cursor: pointer;
     border-radius: 50%;
     font-size: small;
@@ -102,8 +99,7 @@ body {
     margin: 1px 2px; 
     text-align: center;
     text-decoration: none; 
-    display:inline;
-    
+    display:inline;   
 }
 
 .navlinks a:hover {
@@ -112,22 +108,41 @@ body {
 
 /* Project container style */
 .project-container {
-    margin: 10%; 
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 5%), var(--color07 100%));  
+    margin: 10%;   
     background-size: 100% 100%;
     height: auto;
+    padding: 2%;
+    border-radius: 5%;
 }
 
 /* Week 03 project special style */
 .wk03Container {
-    background-color: var(--color08);
     padding: 2%;
     text-align: center;
+    background-color: var(--color05);
+    height: 60vh;
+    width: 60vw;
+    align-content: center;
+    margin: auto; 
+    width: 50%;
+    border: 1% var(--color07);
+    border-radius: 5%;    
+}
+
+.project-container {
+    background-color: var(--color05);
+    padding-left: 25%;
+    padding-bottom: 3%;
 }
 
 .project-container li {
     background-color: var(--color02);
+    border-radius: 15px;
     color: var(--color07);
+    font-size: larger;
+    margin: 1%;
+    padding: 1%;
+    padding-left: 3%;
     width: 52%;
 }
 
