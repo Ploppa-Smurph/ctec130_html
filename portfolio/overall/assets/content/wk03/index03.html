@@ -33,15 +33,16 @@
 
         <!-- <h1> tag: this is the largest of the 'heading' tags, which are different from the 'head' metadata tag. -->
         <!-- There are 6 different predefined HTML headings, <h1> to <h6>, <h1> is largest and the headings get progressively smaller until <h6> -->
-        <h1>Jeff Walley's Week 03 Webpage with External CSS Stylesheet</h1>
+        <h1>Jeff Walley's Week 03  & Week 04 Webpage with External CSS Stylesheet</h1>
 
         <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
         <p>This week we link an external CSS (Cascading Style Sheet) =>
 
+            <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
+            <br><br>
             <!-- <i> tag: make text between <i> tag italic. -->
             &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
 
-            <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
             <br>
             <br>
             The 'link' tag allows us to specify an external path that holds the webpage's CSS style file.
@@ -84,12 +85,16 @@
             <p class="margin">The margin is implied with the light blue line on the outside of the box. This is actually an outline, because the margin area is simply blank space.</p>
         </div>
     </div>
-
-    
+    <div class="imageGradient-container">
+        <div class="imageGradient-overlay"></div>
+            <img class="imageGradient" src="../../img/greekShrimp.jpg" title="These are a type of Greek Shrimp." alt="Shrimp from the islands of Greece.">
+            <p class=imageGradient-credit>Photo by <a href="https://unsplash.com/@bigdodzy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Big Dodzy</a> on <a href="https://unsplash.com/photos/a-pile-of-bones--35Lc6XnfmM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>    
+    </div>
 
      <!-- the 'footer' tag delineates an area at the bottom of the HTML body -->
-     <footer>
-        <p>Copyright &copy; 2024 Jeffrey Walley | Walley Web Works</p>
+     <footer class="footer-container">
+        <p class="footerTag">Copyright &copy; 2024 Jeffrey Walley | Walley Web Works</p>
 
         <!-- Footer tag end, denoted by the slash '/' -->
     </footer>
