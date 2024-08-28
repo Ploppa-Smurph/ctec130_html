@@ -49,7 +49,6 @@ table {
 /* Start of JSW's custom css */
 /* :root to set custom css variables for use in the code later */
 /* I always establish a color scheme and grab at least 5, and up to 9 color RGB codes for use as variables for quick use */
-@import url("");
 
 :root {
     --color01: rgba(48, 48, 54);
@@ -221,12 +220,12 @@ h1, h2, h3, h4 {
 }
 
 .imageGradient-container {
-    background-image: linear-gradient(to right, rgba(243, 227, 2, 0.40), rgba(58, 88, 103, 0.90));
-    
+    background-image: linear-gradient(to right, rgba(243, 227, 2, 0.40), rgba(58, 88, 103, 0.90));    
 }
 
 .imageGradient {
     max-width: 500px;
+    border-color: var(--color02);
     border-radius: 5%;
     padding: 1%;
     display: block;
