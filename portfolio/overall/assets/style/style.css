@@ -99,10 +99,7 @@ h1, h2, h3, h4 {
     padding: 2vh;
     background-color: var(--color09);
     overflow: hidden;
-}
-
-.navlinks {
-    justify-self: center;
+     
 }
 
 .navlinks a:link, a:visited {
