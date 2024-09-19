@@ -1,3 +1,20 @@
+/* Jeffrey Walley | 09/18/24 | CTEC130-901 Portfolio Check-In 01  
+---
+
+--- * Portfolio Check-In 1 wk03: Properly target a class or id attribute as part of styling a page
+--- * Portfolio Check-In 1 wk03: Properly utilize a Combinator Selector as part of styling a page
+--- * Portfolio Check-In 1 wk03: Properly float an element in an HTML page without obvious visual errors
+--- * Portfolio Check-In 1 wk04: Utilize styles that modify “box-model” properties (margin, padding, border) as part of a well-styled page
+--- * Portfolio Check-In 1 wk04: Properly implement a background image via CSS
+--- * Portfolio Check-In 1 wk04: Properly implement a CSS Gradient
+--- * Portfolio Check-In 1 wk04: Properly implement a CSS Box Shadow
+---------------------------------------------------------------------------------------
+--- * Portfolio Check-In 2 wk03: Properly utilize fallback fonts in a working CSS rule
+--- * Portfolio Check-In 2 wk04: Properly implement a basic CSS Reset
+--- * Portfolio Check-In 2 wk05: Properly organize a horizontal navigation section with left-to-right links
+--- * ---- (NEED TO DO) --- * Properly implement and style CSS columns using CSS column properties
+--- * Portfolio Check-In 2 wk05: Fix an element in place while scrolling using CSS without damaging the surrounding layout 
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,6 +64,7 @@ table {
 }
 
 /* Start of JSW's custom css */
+
 /* :root to set custom css variables for use in the code later */
 /* I always establish a color scheme and grab at least 5, and up to 9 color RGB codes for use as variables for quick use */
 
@@ -62,6 +80,11 @@ table {
     --color09: rgb(129, 7, 7);
 }
 
+/*
+---
+* --- Portfolio Check-In wk03: Properly utilize fallback fonts
+---
+*/
 .new-amsterdam-regular {
     font-family: "New Amsterdam", Verdana, Tahoma, sans-serif;
     font-weight: 400;
@@ -74,7 +97,6 @@ table {
     font-style: normal;
 }
   
-
 /* Body style */
 body {
     background-image: url("../img/crumpled.png");
@@ -87,6 +109,10 @@ h1, h2, h3, h4 {
 }
 
 /* Navbar style */
+
+/*
+--- * Portfolio Check-In 2 wk05: Fix an element in place while scrolling 
+*/
 .navbar-container {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -98,7 +124,6 @@ h1, h2, h3, h4 {
     padding: 2vh;
     background-color: var(--color09);
     overflow: hidden;
-     
 }
 
 .navlinks a:link, a:visited {
@@ -141,6 +166,10 @@ h1, h2, h3, h4 {
 }
 
 /* Week 03 & 04 project special style */
+
+/*
+--- * Portfolio Check-In 1 wk04: 
+*/
 .wk03Container {
     padding: 2%;
     text-align: center;
@@ -163,7 +192,8 @@ h1, h2, h3, h4 {
     font-weight: bold;
 }
 
-/* CSS Combinator selectors */
+/* 
+--- * Portfolio Check-In 1 wk03: Properly utilize a Combinator Selector */
 .wk03Container > p {
     color: var(--color09);
     height: auto;
