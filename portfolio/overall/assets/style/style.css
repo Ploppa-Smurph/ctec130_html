@@ -274,6 +274,52 @@ h1, h2, h3, h4 {
     box-shadow: 5px 10px 18px var(--color01);
 }
 
+/* 06 - Monopoly Board Custom Styles */
+#headline {
+    background: var(--color05);
+    text-align: center;
+}
+
+/* Set up the overall board layout */
+.monopoly-border{
+    border-width: 4vw;
+    border-color: var(--color05);    
+}
+.monopoly-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color06);
+ 
+}
+
+/* Style each row */
+.monopoly-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+/* Style individual spaces */
+#space {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: var(--color04);
+    
+}    
+
+/* Center space (Monopoly Man) */
+.center-space {
+    align-items: center;
+}
+
+#monopolymanImg {
+    border-radius: 5%;
+}
+
 /* Footer Style */
 .footer-container {
     background-color: var(--color04);
