@@ -320,6 +320,54 @@ h1, h2, h3, h4 {
     border-radius: 5%;
 }
 
+/*
+-- wk07 Cutom CSS --
+*/
+--  nav {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            width: 200px;
+            position: relative; /* Allows positioning of child elements */
+        }
+
+        ul {
+            list-style-type: none; /* Removes default bullets */
+        }
+
+        li {
+            border-bottom: 1px solid #ccc; /* Adds a line between items */
+        }
+
+        .dropdown {
+            display: none; /* Initially hidden, shown on hover */
+            position: absolute; /* Positioned relative to the parent */
+            left: 200px; /* Adjust based on your layout needs */
+            top: 0; /* Align with the parent menu */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        .dropdown li {
+            border-bottom: none; /* No line between dropdown items */
+        }
+
+        nav > ul > li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+
+        a {
+            text-decoration: none; /* Removes underline from links */
+            color: #333;
+            padding: 10px 20px; /* Padding inside the link area */
+            display: block; /* Makes the whole space clickable */
+        }
+
+        a:hover {
+            background-color: #e4e4e4; /* Changes color on hover */
+        }
+
+
 /* Footer Style */
 .footer-container {
     background-color: var(--color04);
