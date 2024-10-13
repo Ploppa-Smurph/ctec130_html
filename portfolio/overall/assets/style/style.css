@@ -116,8 +116,8 @@ h1, h2, h3, h4 {
 .navbar-container {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0; 
-    width: auto;
+    top: 0;
+    width: 100%; /* Ensure the navbar takes the full width */
 }
 
 .navbar {
@@ -126,19 +126,20 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
-.navlinks a:link, a:visited {
+.navlinks a:link,
+.navlinks a:visited {
     background-color: var(--color06);
     color: var(--color01);
     cursor: pointer;
     border-radius: 50%;
     font-size: small;
     padding: .5%;
-    margin: 1px 2px; 
+    margin: 5px; /* Increase margin for better spacing */
     text-align: center;
-    text-decoration: none; 
-    display:inline;   
+    text-decoration: none;
+    display: inline-block; /* Change to inline-block to prevent overlap */
+    vertical-align: middle; /* Aligns the items vertically in the middle */
 }
-
 /* Project container style */
 .project-container {
     margin: 10%;   
@@ -326,7 +327,7 @@ h1, h2, h3, h4 {
         border: 1px solid #ddd;
         padding: 10px;
         margin: 10px;
-        background: #fff;
+        background: #ccc;
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     
@@ -342,55 +343,105 @@ h1, h2, h3, h4 {
     
     .comment p {
         margin: 0;
+        background-color: #f4f4f4;
     }    
 
 /*
--- wk07 Cutom CSS --
+-- wk07 Cutom CSS multi dropdown menu --
 */
---  nav {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            width: 200px;
-            position: relative; /* Allows positioning of child elements */
-        }
+#cupcake-header {
+    background: #f8b195;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
 
-        ul {
-            list-style-type: none; /* Removes default bullets */
-        }
+#cupcake-h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
-        li {
-            border-bottom: 1px solid #ccc; /* Adds a line between items */
-        }
+p {
+    margin: 0;
+    font-size: 1.2em;
+}
 
-        .dropdown {
-            display: none; /* Initially hidden, shown on hover */
-            position: absolute; /* Positioned relative to the parent */
-            left: 200px; /* Adjust based on your layout needs */
-            top: 0; /* Align with the parent menu */
-            background-color: #fff;
-            border: 1px solid #ccc;
-            width: 200px;
-        }
+main {
+    padding: 20px;
+}
+.cupcakes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-        .dropdown li {
-            border-bottom: none; /* No line between dropdown items */
-        }
+.cupcake {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
 
-        nav > ul > li:hover .dropdown {
-            display: block; /* Show dropdown on hover */
-        }
+.cupcake img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
-        a {
-            text-decoration: none; /* Removes underline from links */
-            color: #333;
-            padding: 10px 20px; /* Padding inside the link area */
-            display: block; /* Makes the whole space clickable */
-        }
+label {
+    display: block;
+    margin-top: 10px;
+}
 
-        a:hover {
-            background-color: #e4e4e4; /* Changes color on hover */
-        }
+select {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+}
 
+.icing-options {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 150px;
+    z-index: 10;
+}
+
+.cupcake select:hover + .icing-options,
+.cupcake .icing-options:hover {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f8b195;
+    color: #fff;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select {
+    margin-top: 5px;
+}
 
 /* Footer Style */
 .footer-container {

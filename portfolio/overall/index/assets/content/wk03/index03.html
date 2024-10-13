@@ -1,0 +1,106 @@
+<!--
+--- * Portfolio Check-In 1 wk03: Properly implement CSS styles on a page via a linked stylesheet 
+--- * Portfolio Check-In 1 wk03: Create a webpage with HTML and CSS that modifies multiple text properties
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
+    <title>Jeff Walley's wk03 Project</title>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="../../../index.html">Home</a>
+                <a href="../wk03/index03.html">Week 01</a>
+                <a href="../wk02/index02.html">Week 02</a>
+                <a href="#">Weeks 03 & 04</a>
+                <a href="../wk05/index05.html">Week 05</a>
+                <a href="../wk06/index06.html">Week 06</a>
+                <a href="../wk07/index07.html">Week 07</a>
+                <a href="../wk08/index08.html">Week 08</a>
+                <a href="../wk09/index09.html">Week 09</a>
+                <a href="../wk10/index10.html">Week 10</a>
+                <a href="../wk11/index11.html">Week 11</a>
+                <a href="../wk12/index12.html">Week 12</a>
+            </div>
+        </div>
+    </div>
+    <div class="wk03Container">
+        <!-- Week 03 Project -->
+
+        <!-- <h1> tag: this is the largest of the 'heading' tags, which are different from the 'head' metadata tag. -->
+        <!-- There are 6 different predefined HTML headings, <h1> to <h6>, <h1> is largest and the headings get progressively smaller until <h6> -->
+        <h1>Jeff Walley's Week 03  & Week 04 Webpage with External CSS Stylesheet</h1>
+
+        <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
+        <p>This week we link an external CSS (Cascading Style Sheet) =>
+
+            <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
+            <br><br>
+            <!-- <i> tag: make text between <i> tag italic. -->
+            &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+
+            <br>
+            <br>
+            The 'link' tag allows us to specify an external path that holds the webpage's CSS style file.
+            <br>
+            By keeping the CSS file in an external location we can have a cleaner HTML structure. Having an external
+            file also helps with templating and reusability of our webcode.
+            <br>
+            <br>
+            The 'rel', or relation/ship, attribute is equal to "stylesheet". This tells the browser that we are using a
+            stylesheet in the link.
+            <br>
+            <br>
+            Next we have the 'type' attribute, which tells the browser that the stylesheet is in "text/css" format.
+            <br>
+            <br>
+            Finally we have the 'href' attribute. The href is where you enter the URL of a page you want to use as
+            link.
+
+            <!-- </p> end tag: close a <p> paragraph section of the HTML file. -->
+        </p>
+    </div>
+
+    <div class="wk03float-container">
+        <div class="float-left">
+            <img class="imgFloat-left" src="../../img/keepLeft.png" alt="Image of a sign that says 'Keep Left' with an arrow pointing left.">
+            <p>This is a sign that tells drivers to keep left. I do use AI in webdesign. I get AI to generate text that is more relevant than 'lorem ipsum' with only slightly more effort. The following text is AI generated: <em>A “keep left” sign in traffic indicates that drivers must stay to the left side of the road or lane. This sign is typically used in countries where vehicles drive on the left side of the road, such as the United Kingdom, Australia, and India. It helps to ensure smooth traffic flow and prevent accidents by guiding drivers to follow the correct path, especially in areas with divided highways, roundabouts, or construction zones. Ignoring this sign can lead to traffic violations and potential hazards on the road.</em>
+            </p>
+        </div>
+        <div class="float-right">
+            <img class="imgFloat-right" src="../../img/keepRight.png" alt="Image of a sign showing to follow Right">
+            <p>This sign tells drivers to stay right. The following interesting about 'Stay Right' signs is brought to you by AI: <em>A “stay right” sign in traffic directs drivers to keep to the right side of the road or lane. This sign is commonly used in countries where vehicles drive on the right side of the road, such as the United States, Canada, and most European countries. It helps maintain orderly traffic flow and enhances safety by ensuring that drivers follow the correct path, particularly in areas with divided highways, construction zones, or when approaching obstacles. Disregarding this sign can result in traffic violations and increase the risk of accidents.</em>
+            </p>
+        </div>
+    </div>
+    <div class="cssBox-container">
+        <div class="cssBox-content">
+            <p class="content">This green box is the 'Content' box of this 'div'</p>
+            <p class="padding">The 'Padding' is the blank area between the 'content' and the red-dashed line.</p>
+            <p class="border">The 'Border', in this example, is drawn with the Red-dashed line.</p>
+            <p class="margin">The margin is implied by the light blue line on the outside of the box. This is actually an 'outline', because the margin area is simply blank space.</p>
+        </div>
+    </div>
+    <div class="imageGradient-container">
+        <div class="imageGradient-overlay"></div>
+            <img class="imageGradient" src="../../img/greekShrimp.jpg" title="These are a type of Greek Shrimp." alt="Shrimp from the islands of Greece.">
+            <p class=imageGradient-credit>Photo by <a href="https://unsplash.com/@bigdodzy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Big Dodzy</a> on <a href="https://unsplash.com/photos/a-pile-of-bones--35Lc6XnfmM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>    
+    </div>
+
+     <!-- the 'footer' tag delineates an area at the bottom of the HTML body -->
+     <footer class="footer-container">
+        <p class="footerTag">Copyright &copy; 2024 Jeffrey Walley | Walley Web Works</p>
+        <!-- Footer tag end, denoted by the slash '/' -->
+    </footer>
+
+</body>
+
+</html>
