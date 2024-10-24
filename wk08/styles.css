@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature1 {
+    background-image: url('https://via.placeholder.com/150?text=Computer+Image1'); /* Placeholder image for computer */
+}
+
+.feature2 {
+    background-image: url('https://via.placeholder.com/150?text=Computer+Image2'); /* Placeholder image for computer */
+}
+
+.feature3 {
+    background-image: url('https://via.placeholder.com/150?text=Computer+Image3'); /* Placeholder image for computer */
+}
+
+/* Mobile Styles */
+@media (max-width: 420px) {
+    header h1.mobile {
+        display: block;
+    }
+
+    aside, .tablet, .desktop {
+        display: none;
+    }
+
+    section.feature1 {
+        background-image: url('https://via.placeholder.com/150?text=Mobile+Image1'); /* Placeholder image for mobile */
+    }
+
+    section.feature2 {
+        background-image: url('https://via.placeholder.com/150?text=Mobile+Image2'); /* Placeholder image for mobile */
+    }
+
+    section.feature3 {
+        background-image: url('https://via.placeholder.com/150?text=Mobile+Image3'); /* Placeholder image for mobile */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 421px) and (max-width: 960px) {
+    header h1.tablet {
+        display: block;
+    }
+
+    aside {
+        display: block;
+        width: 40%;
+        float: right;
+        background: #eee;
+        padding: 10px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.feature1, section.feature2 {
+        width: 50%;
+        background-image: url('https://via.placeholder.com/150?text=Tablet+Image1'); /* Placeholder image for tablet */
+    }
+
+    section.feature3, footer {
+        width: 100%;
+    }
+
+    section.feature3 {
+        background-image: url('https://via.placeholder.com/150?text=Tablet+Image3'); /* Placeholder image for tablet */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 961px) {
+    .content {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "aside header"
+            "aside main"
+            "aside footer";
+    }
+
+    header {
+        grid-area: header;
+        width: 100%;
+        background: #333;
+        color: #fff;
+    }
+
+    header h1.desktop {
+        display: block;
+    }
+
+    aside {
+        display: block;
+        grid-area: aside;
+        background: #444;
+        color: #fff;
+        padding: 20px;
+    }
+
+    aside nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    aside nav ul li {
+        margin: 10px 0;
+    }
+
+    aside nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .content {
+        grid-area: main;
+    }
+
+    section.feature1, section.feature2, section.feature3 {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section.feature1 {
+        background-image: url('https://via.placeholder.com/150?text=Computer+Image1'); /* Placeholder image for computer */
+    }
+
+    section.feature2 {
+        background-image: url('https://via.placeholder.com/150?text=Computer+Image2'); /* Placeholder image for computer */
+    }
+
+    section.feature3 {
+        background-image: url('https://via.placeholder.com/150?text=Computer+Image3'); /* Placeholder image for computer */
+    }
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        background: #333;
+        color: #fff
+    }
+}
