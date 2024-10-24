@@ -428,6 +428,67 @@ select {
 
 /* 08: */ 
 
+/* 09: Personal Tier List CSS */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption {
+    background-color: darkgoldenrod;
+    color:cyan;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.tier-s {
+    background-color: #ff7f7e;
+}
+
+.tier-a {
+    background-color: #ffbf7f;
+}
+
+.tier-b {
+    background-color: #ffdf80;
+}
+
+.tier-c {
+    background-color: #beff7f;
+}
+
+.tier-d {
+    background-color: #7fbfff;
+}
+
+.tier-f {
+    background-color: #ff7ffe;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#table-footer {
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: #beff7f;
+}
+
+/* 10 - */
+
 
 /* footer */
 footer {
