@@ -487,7 +487,81 @@ tfoot td {
     color: #beff7f;
 }
 
-/* 10 - */
+
+/* 10 - Ultimate Form Custom CSS*/
+.formBody { 
+    background-color: cornflowerblue; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 110vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+} 
+
+form { 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+
+fieldset { 
+    background-color: whitesmoke; 
+    border: none; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+} 
+
+legend { 
+    font-weight: bold; 
+} 
+
+label { 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+
+input[type="text"], 
+input[type="email"], 
+textarea { 
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+} 
+
+input[type="radio"], 
+input[type="checkbox"] { 
+    margin-right: 5px; 
+} 
+
+.buttons { 
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+button { 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+} 
+
+button[type="reset"] { 
+    background-color: #ff7f7e; 
+    color: white; 
+} 
+
+button[type="submit"] { 
+    background-color: #7fbfff; color: white;
+}
+
+/* 11 - */
+
+/* 12 - */
 
 
 /* footer */

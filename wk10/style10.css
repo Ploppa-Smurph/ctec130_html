@@ -1,0 +1,74 @@
+.formBody { 
+    background-color: cornflowerblue; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 110vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+} 
+
+h1 {
+   text-align: center;     
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+form { 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+
+fieldset { 
+    background-color: whitesmoke; 
+    border: 1px solid cornflowerblue; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+} 
+
+legend { 
+    font-weight: bold; 
+} 
+
+label { 
+    display: block; 
+    margin-bottom: 10px; 
+} 
+
+input[type="text"], 
+input[type="email"], 
+textarea { 
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+} 
+
+input[type="radio"], 
+input[type="checkbox"] { 
+    margin-right: 5px; 
+} 
+
+.buttons { 
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+button { 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+} 
+
+button[type="reset"] { 
+    background-color: coral; 
+    color: white; 
+} 
+
+button[type="submit"] { 
+    background-color: cornflowerblue; 
+    color: white;
+}

@@ -48,21 +48,50 @@
             </div>
         </div>
 
-        <!-- <h1> tag: this is the largest 'heading' tag, which are different from the 'head' metadata tag. -->
-        <h1>Jeffrey S. Walley</h1>
+        <div class="formBody">
+        <form>
+            <fieldset>
+                <legend>User Information</legend> 
+                    <label for="firstname">First Name (required, min length 2):</label>
+                    <input type="text" id="firstname" name="firstname" required minlength="2"> 
 
-        <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
-        <p>My name is Jeff and I love to play with computers. I grew up in the early 80's and have been toying with
-            computers for years.
+                    <label for="lastname">Last Name (required, min length 2):</label> 
+                    <input type="text" id="lastname" name="lastname" required minlength="2"> 
+                    
+                    <label for="email">Email (required):</label> 
+                    <input type="email" id="email" name="email" required>
 
-            <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
-            <br><br>
+            <fieldset>
+                <legend>Favorite Size</legend> 
+                    <label><input type="radio" name="group1" value="option1" required>Small</label> 
+                    <label><input type="radio" name="group1" value="option2">Middlin'</label>
+                    <label><input type="radio" name="group1" value="option3">Venti</label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Shower Sing-A-Longs</legend> 
+                    <label><input type="radio" name="group2" value="option1" required>Shake It Off - Taylor Swift</label> 
+                    <label><input type="radio" name="group2" value="option2">Let It Go - Idina Menzel (from Frozen)</label>
+                    <label><input type="radio" name="group2" value="option3">Around the World - Daft Punk</label>
+            </fieldset>
 
-            <!-- </p> end tag: close a <p> paragraph section of the HTML file. -->
-        </p>
+            <fieldset>
+                <legend>Favorite Collectible Card Game Card</legend> 
+                <label><input type="checkbox" name="checkboxes" value="check1">Regidrago VSTAR | Silver Tempest | Pokemon</label>
+                <label><input type="checkbox" name="checkboxes" value="check2">Thragtusk | Return to Ravnica | Magic: The Gathering</label> 
+                <label><input type="checkbox" name="checkboxes" value="check3">Emergency Cache | Arkham Horror</label>
+            </fieldset> 
+            
+            <label for="comments">Comments:</label> 
+            <textarea id="comments" name="comments" rows="5"></textarea>
 
-        <!-- Body tag end, denoted by the slash '/'. -->
+            <div class="buttons"> 
+                <button type="reset">Reset</button> 
+                <button type="submit">Submit</button> 
+            </div>
+            </fieldset>
+        </form>
+    </div>    
 </body>
 
 <!-- HTML tag end, denoted by the slash '/' -->
