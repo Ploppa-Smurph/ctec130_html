@@ -1,0 +1,97 @@
+/* styles.css */
+
+.suggestions_header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.suggestions_nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestions_navbar-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.suggestions_nav-item {
+    position: relative;
+}
+
+.suggestions_nav-item>a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    white-space: nowrap;
+}
+
+.suggestions_nav-item>a:hover,
+.suggestions_nav-item>a:focus {
+    background-color: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+}
+
+.dropdown>li {
+    position: relative;
+    display: block;
+}
+
+.dropdown>li>a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+}
+
+.dropdown>li>a:hover,
+.dropdown>li>a:focus {
+    background-color: #666;
+}
+
+.suggestions_nav-item:hover>.dropdown,
+.suggestions_nav-item:focus-within>.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown .nav-item:hover>.dropdown,
+.dropdown .nav-item:focus-within>.dropdown {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+article section {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+article section h2,
+article section h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-left: 5px solid #333;
+}

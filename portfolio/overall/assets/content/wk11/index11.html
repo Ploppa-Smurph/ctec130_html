@@ -18,11 +18,15 @@
         <!-- This metadata provides information about responsive web design. This defines the 'viewport' and states that the browser should use the entire viewable device width. -->
         <meta name="viewport" content="width=device-width">
 
+        <!-- Link to Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap">
+
         <!-- Link tag allows you to specify the path of an external style (CSS) file. The link tag is also used to set the 'favicon' for the website. -->
         <link rel="stylesheet" type="text/css" href="../../style/style.css" />
 
         <!-- Title tag: the 'title' will display in the tab section of the browser, or across the top of the browser in non-tabbed browsing. -->
-        <title>Jeff Walley's Week 04 Webpage </title>
+        <title>Jeff Walley's Week 11 Webpage: Embedded Video with Comment and Thumbnail / Poster</title>
 
         <!-- </head> end tag: used to close the head section of the HTML document. the '/' or frontslash delinates the close of an HTML tag. Most all HTML tags require the end tag, but there are a few that are self ending. -->
 </head>
@@ -47,21 +51,21 @@
                                 <a href="../wk12/index12.html">Week 12</a>
                         </div>
                 </div>
-                <!-- <h1> tag: this is the largest 'heading' tag, which are different from the 'head' metadata tag. -->
-                <h1>Jeffrey S. Walley</h1>
-
-                <!-- <p> tag: the <p> tag denotes a new paragraph of text in the webpage. -->
-                <p>My name is Jeff and I love to play with computers. I grew up in the early 80's and have been toying
-                        with computers for years.
-
-                        <!-- <br> tag: line break tag, used to create a single line break. The <br> tag is an 'empty tag' meaning that it DOES NOT need an end tag. -->
-                        <br><br>
-
-
-                        <!-- </p> end tag: close a <p> paragraph section of the HTML file. -->
-                </p>
-
-                <!-- Body tag end, denoted by the slash '/'. -->
+                <div class="video-body">
+                <div class="video-container"> 
+                        <!-- Video with controls and poster image --> 
+                        <video controls poster="../../img/peavyAmp.png" width="900" height="775"> 
+                        <source src="../../img/indi004.mp4" type="video/mp4"> Your browser does not support the video tag. 
+                        </video>
+                        <a href="https://open-video.org/details.php?videoid=360" class="video-link" target="_blank">Open Video Project</a> 
+                </div> 
+                <div class="review-card"> 
+                        <h1>Space Age Indians</h1> 
+                        <p>The documentary, this clip is taken from, tries to show that Native Americans are modern people that are part of modern society. "Space Age Indians" is sung in the background by an unnamed band.</p> 
+                        <br>
+                        <p id="mysteryTag">I have found no additional information about this clip after it's initial discovery.</p> 
+                </div>
+        </div>
 </body>
 
 <!-- HTML tag end, denoted by the slash '/' -->

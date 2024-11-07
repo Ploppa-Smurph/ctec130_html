@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- 'lang' is an attribute of the 'html' declaration. This information tells the browser what language to expect, in this instance 'en' or English -->
+<html lang="en">
+
+<!-- <head> tag: the 'head' tag provides metadata for the browser -->
+
+<head>
+
+        <!-- <meta> tag: this is metadata provided for the browser. This information informs the browser we are using UTF-8. -->
+        <!-- UTF-8 is a character set that contains all characters needed to write the majority of living languages -->
+        <meta charset="UTF-8">
+
+        <!-- This metadata provides information about responsive web design. This defines the 'viewport' and states that the browser should use the entire viewable device width. -->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Link to Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap">
+
+        <!-- Link tag allows you to specify the path of an external style (CSS) file. The link tag is also used to set the 'favicon' for the website. -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <!-- Title tag: the 'title' will display in the tab section of the browser, or across the top of the browser in non-tabbed browsing. -->
+        <title>Jeff Walley's Week 11 Webpage: Embedded Video with Comment and Thumbnail / Poster</title>
+
+        <!-- </head> end tag: used to close the head section of the HTML document. the '/' or frontslash delinates the close of an HTML tag. Most all HTML tags require the end tag, but there are a few that are self ending. -->
+</head>
+
+<!-- <body> tag: this marks the beginning of the body of the webpage. The body will contain all headers, paragraphs, and other content of the webpage. -->
+<!-- Webpages will contain 1 body, not unlike the Highlander, "...there can be only one.". -->
+
+<body>
+    <div class="video-body">
+        <div class="video-container"> 
+            <!-- Video with controls and poster image --> 
+                        <video controls poster="peavyAmp.png" width="900" height="775"> 
+                        <source src="indi004.mp4" type="video/mp4"> Your browser does not support the video tag. 
+                        </video>
+                        <a href="https://open-video.org/details.php?videoid=360" class="video-link" target="_blank">Open Video Project</a> 
+                </div> 
+                <div class="review-card"> 
+                        <h1>Space Age Indians</h1> 
+                        <p>The documentary, this clip is taken from, tries to show that Native Americans are modern people that are part of modern society. "Space Age Indians" is sung in the background by an unnamed band.</p> 
+                        <br>
+                        <p id="mysteryTag">I have found no additional information about this clip after it's initial discovery.</p> 
+                </div>
+        </div>
+</body>
+
+<!-- HTML tag end, denoted by the slash '/' -->
+
+</html>
