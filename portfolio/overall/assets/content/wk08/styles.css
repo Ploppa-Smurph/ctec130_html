@@ -1,0 +1,228 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background: url('images/best.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main, aside {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Section background images */
+.feature1 {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.feature2 {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.feature3 {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+/* Mobile styles */
+@media (max-width: 420px) {
+    header h1 {
+        display: none;
+    }
+    
+    header h1.mobile {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .feature1 {
+        background-image: url('images/mobile.jpg');
+    }
+
+    .feature2 {
+        background-image: url('images/computers-lame.jpg');
+    }
+
+    .feature3 {
+        background-image: url('images/tablets-junk.jpg');
+    }
+
+    main, .feature1, .feature2, .feature3, footer {
+        width: 100%;
+    }
+    
+    .feature1 h2, .feature2 h2, .feature3 h2 {
+        display: none;
+    }
+    
+    .feature1 h2.mobile, .feature2 h2.mobile, .feature3 h2.mobile {
+        display: block;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 421px) and (max-width: 960px) {
+    header h1 {
+        display: none;
+    }
+    
+    header h1.tablet {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px;
+    }
+
+    aside {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature1, .feature2 {
+        width: 50%;
+    }
+
+    .feature3, footer {
+        width: 100%;
+    }
+
+    .feature1 {
+        background-image: url('images/tablet.jpg');
+    }
+
+    .feature2 {
+        background-image: url('images/computers-lame.jpg');
+    }
+
+    .feature3 {
+        background-image: url('images/mobile-junk.jpg');
+    }
+    
+    .feature1 h2, .feature2 h2, .feature3 h2 {
+        display: none;
+    }
+
+    .feature1 h2.tablet, .feature2 h2.tablet, .feature3 h2.tablet {
+        display: block;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 961px) {
+    .mobile, .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header h1.desktop, .feature1 h2.desktop, .feature2 h2.desktop, .feature3 h2.desktop {
+        display: block;
+    }
+
+    .wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    main {
+        display: flex;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .feature1, .feature2, .feature3 {
+        width: 75%;
+    }
+
+    header, footer {
+        width: 100%;
+    }
+
+    .feature1 {
+        background-image: url('desktop.jpg');
+    }
+
+    .feature2 {
+        background-image: url('mobile.jpg');
+    }
+
+    .feature3 {
+        background-image: url('tablet.jpg');
+    }
+    
+    .feature1 h2, .feature2 h2, .feature3 h2 {
+        display: none;
+    }
+
+    .feature1 h2.desktop, .feature2 h2.desktop, .feature3 h2.desktop {
+        display: block;
+    }
+}
