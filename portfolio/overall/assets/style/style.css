@@ -660,7 +660,47 @@ button[type="submit"] {
     .video-container { display: none; } 
 }
 
-/* 12 - */
+/* 12 - Barrel Roll*/
+
+/* styles.css */
+.body-barrelroll {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.airplane {
+    transition: transform 2s, filter 2s;
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.airplane:hover {
+    transform: rotate(360deg);
+    filter: blur(5px);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 20px;
+    padding: 25px;
+    background-color: royalblue;
+    transform: skewX(35deg) skewY(-20deg);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: skewX(0deg) scale(1.2);
+}
 
 
 /* footer */
